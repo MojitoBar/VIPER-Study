@@ -14,13 +14,13 @@ import Foundation
 // https://jsonplaceholder.typicode.com/users
 
 protocol UserInteractorable {
-    var presenter: AnyPresenter? { get set }
+    var presenter: UserPresentable? { get set }
     
     func getUsers()
 }
 
 class UserInteractor: UserInteractorable {
-    var presenter: AnyPresenter?
+    var presenter: UserPresentable?
     
     func getUsers() {
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else { return }

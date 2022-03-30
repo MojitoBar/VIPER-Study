@@ -9,11 +9,15 @@ import Foundation
 import UIKit
 
 protocol UserViewUpdatable {
+    var presenter: UserPresentable? { get set }
+    
     func update(with users: [User])
     func update(with error: String)
 }
 
-class UserViewController: UIViewController, UserViewUpdatable, UITableViewDelegate, UITableViewDataSource {
+class UserViewController: UIViewController, UserViewUpdatable {
+    var presenter: UserPresentable?
+    
     private let tableView: UITableView = {
         let table = UITableView()
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -62,22 +66,5 @@ class UserViewController: UIViewController, UserViewUpdatable, UITableViewDelega
             self.tableView.isHidden = true
             self.label.isHidden = false
         }
-    }
-    
-    // Table
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
-        var content = cell.defaultContentConfiguration()
-        
-        content.text = users[indexPath.row].name
-        
-        cell.contentConfiguration = content
-        
-        return cell
     }
 }
