@@ -16,6 +16,7 @@ typealias EntryPoint = UserViewUpdatable & UIViewController
 protocol UserRoutable {
     var entry: EntryPoint? { get }
     static func start() -> UserRoutable
+    func showUserDetail(userInfo: User)
 }
 
 class UserRouter: UserRoutable {
@@ -25,17 +26,28 @@ class UserRouter: UserRoutable {
         let router = UserRouter()
         
         // Assign VIP
-        let view: UserViewUpdatable = UserViewController()
-        var presenter: AnyPresenter = UserPresernter()
+        var view: UserViewUpdatable = UserViewController()
+        var presenter: UserPresentable = UserPresenter()
         var interactor: UserInteractorable = UserInteractor()
         
         interactor.presenter = presenter
         
         presenter.view = view
         presenter.interactor = interactor
+        presenter.router = router
+        
+        view.presenter = presenter
         
         router.entry = view as? EntryPoint
         
+        
         return router
+    }
+    
+    func showUserDetail(userInfo: User) {
+        guard let navigationController = entry?.navigationController else { return }
+        
+        let userDetailVC = UserDetailView()
+        navigationController.pushViewController(userDetailVC, animated: true)
     }
 }
