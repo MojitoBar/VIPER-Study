@@ -11,23 +11,23 @@ import UIKit
 // Object
 // Entry point
 
-typealias EntryPoint = AnyView & UIViewController
+typealias EntryPoint = UserViewUpdatable & UIViewController
 
-protocol AnyRouter {
+protocol UserRoutable {
     var entry: EntryPoint? { get }
-    static func start() -> AnyRouter
+    static func start() -> UserRoutable
 }
 
-class UserRouter: AnyRouter {
+class UserRouter: UserRoutable {
     var entry: EntryPoint?
     
-    static func start() -> AnyRouter {
+    static func start() -> UserRoutable {
         let router = UserRouter()
         
         // Assign VIP
-        let view: AnyView = UserViewController()
+        let view: UserViewUpdatable = UserViewController()
         var presenter: AnyPresenter = UserPresernter()
-        var interactor: AnyInteractor = UserInteractor()
+        var interactor: UserInteractorable = UserInteractor()
         
         interactor.presenter = presenter
         

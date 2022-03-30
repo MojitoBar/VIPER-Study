@@ -16,8 +16,8 @@ enum FetchError: Error {
 }
 
 protocol AnyPresenter {
-    var interactor: AnyInteractor? { get set }
-    var view: AnyView? { get set }
+    var interactor: UserInteractorable? { get set }
+    var view: UserViewUpdatable? { get set }
     
     func interactorDidFetchUsers(with result: Result<[User], Error>)
 }
@@ -26,13 +26,13 @@ class UserPresernter: AnyPresenter {
     init() {
         print("UserPresenter Init")
     }
-    var interactor: AnyInteractor? {
+    var interactor: UserInteractorable? {
         didSet{
             interactor?.getUsers()
         }
     }
     
-    var view: AnyView?
+    var view: UserViewUpdatable?
     
     func interactorDidFetchUsers(with result: Result<[User], Error>) {
         switch result {
