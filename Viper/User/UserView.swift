@@ -7,16 +7,13 @@
 
 import Foundation
 import UIKit
-// ViewController
-// protocol
-// reference
 
-protocol AnyView {
+protocol UserViewUpdatable {
     func update(with users: [User])
     func update(with error: String)
 }
 
-class UserViewController: UIViewController, AnyView, UITableViewDelegate, UITableViewDataSource {
+class UserViewController: UIViewController, UserViewUpdatable, UITableViewDelegate, UITableViewDataSource {
     private let tableView: UITableView = {
         let table = UITableView()
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")

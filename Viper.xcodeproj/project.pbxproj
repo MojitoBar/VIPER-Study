@@ -12,11 +12,16 @@
 		B74499BE27F41FBA00205D25 /* Viper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B74499BC27F41FBA00205D25 /* Viper.xcdatamodeld */; };
 		B74499C027F41FBB00205D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B74499BF27F41FBB00205D25 /* Assets.xcassets */; };
 		B74499C327F41FBB00205D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B74499C127F41FBB00205D25 /* LaunchScreen.storyboard */; };
-		B74499CC27F41FD200205D25 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74499CB27F41FD200205D25 /* View.swift */; };
-		B74499CE27F41FDC00205D25 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74499CD27F41FDC00205D25 /* Interactor.swift */; };
-		B74499D027F41FE200205D25 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74499CF27F41FE200205D25 /* Presenter.swift */; };
-		B74499D227F41FE900205D25 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74499D127F41FE900205D25 /* Entity.swift */; };
-		B74499D427F41FF300205D25 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74499D327F41FF300205D25 /* Router.swift */; };
+		B74499CC27F41FD200205D25 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74499CB27F41FD200205D25 /* UserView.swift */; };
+		B74499CE27F41FDC00205D25 /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74499CD27F41FDC00205D25 /* UserInteractor.swift */; };
+		B74499D027F41FE200205D25 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74499CF27F41FE200205D25 /* UserPresenter.swift */; };
+		B74499D227F41FE900205D25 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74499D127F41FE900205D25 /* UserEntity.swift */; };
+		B74499D427F41FF300205D25 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74499D327F41FF300205D25 /* UserRouter.swift */; };
+		B74499D727F4830B00205D25 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74499D627F4830B00205D25 /* UserDetailView.swift */; };
+		B74499D927F4831B00205D25 /* UserDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74499D827F4831B00205D25 /* UserDetailInteractor.swift */; };
+		B74499DB27F4832300205D25 /* UserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74499DA27F4832300205D25 /* UserDetailPresenter.swift */; };
+		B74499DD27F4832C00205D25 /* UserDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74499DC27F4832C00205D25 /* UserDetailEntity.swift */; };
+		B74499DF27F4833600205D25 /* UserDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74499DE27F4833600205D25 /* UserDetailRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +32,16 @@
 		B74499BF27F41FBB00205D25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B74499C227F41FBB00205D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B74499C427F41FBB00205D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B74499CB27F41FD200205D25 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		B74499CD27F41FDC00205D25 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
-		B74499CF27F41FE200205D25 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		B74499D127F41FE900205D25 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
-		B74499D327F41FF300205D25 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B74499CB27F41FD200205D25 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		B74499CD27F41FDC00205D25 /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
+		B74499CF27F41FE200205D25 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
+		B74499D127F41FE900205D25 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		B74499D327F41FF300205D25 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		B74499D627F4830B00205D25 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		B74499D827F4831B00205D25 /* UserDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailInteractor.swift; sourceTree = "<group>"; };
+		B74499DA27F4832300205D25 /* UserDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailPresenter.swift; sourceTree = "<group>"; };
+		B74499DC27F4832C00205D25 /* UserDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailEntity.swift; sourceTree = "<group>"; };
+		B74499DE27F4833600205D25 /* UserDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +74,8 @@
 		B74499B227F41FBA00205D25 /* Viper */ = {
 			isa = PBXGroup;
 			children = (
-				B74499CA27F41FC800205D25 /* VIPER */,
+				B74499D527F482F400205D25 /* UserDetail */,
+				B74499CA27F41FC800205D25 /* User */,
 				B74499B327F41FBA00205D25 /* AppDelegate.swift */,
 				B74499B527F41FBA00205D25 /* SceneDelegate.swift */,
 				B74499BF27F41FBB00205D25 /* Assets.xcassets */,
@@ -75,16 +86,36 @@
 			path = Viper;
 			sourceTree = "<group>";
 		};
-		B74499CA27F41FC800205D25 /* VIPER */ = {
+		B74499CA27F41FC800205D25 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				B74499CB27F41FD200205D25 /* View.swift */,
-				B74499CD27F41FDC00205D25 /* Interactor.swift */,
-				B74499CF27F41FE200205D25 /* Presenter.swift */,
-				B74499D127F41FE900205D25 /* Entity.swift */,
-				B74499D327F41FF300205D25 /* Router.swift */,
+				B74499E027F483E600205D25 /* View */,
+				B74499CB27F41FD200205D25 /* UserView.swift */,
+				B74499CD27F41FDC00205D25 /* UserInteractor.swift */,
+				B74499CF27F41FE200205D25 /* UserPresenter.swift */,
+				B74499D127F41FE900205D25 /* UserEntity.swift */,
+				B74499D327F41FF300205D25 /* UserRouter.swift */,
 			);
-			path = VIPER;
+			path = User;
+			sourceTree = "<group>";
+		};
+		B74499D527F482F400205D25 /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B74499D627F4830B00205D25 /* UserDetailView.swift */,
+				B74499D827F4831B00205D25 /* UserDetailInteractor.swift */,
+				B74499DA27F4832300205D25 /* UserDetailPresenter.swift */,
+				B74499DC27F4832C00205D25 /* UserDetailEntity.swift */,
+				B74499DE27F4833600205D25 /* UserDetailRouter.swift */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		B74499E027F483E600205D25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,12 +188,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B74499CE27F41FDC00205D25 /* Interactor.swift in Sources */,
-				B74499D027F41FE200205D25 /* Presenter.swift in Sources */,
+				B74499CE27F41FDC00205D25 /* UserInteractor.swift in Sources */,
+				B74499D027F41FE200205D25 /* UserPresenter.swift in Sources */,
 				B74499BE27F41FBA00205D25 /* Viper.xcdatamodeld in Sources */,
-				B74499D427F41FF300205D25 /* Router.swift in Sources */,
-				B74499D227F41FE900205D25 /* Entity.swift in Sources */,
-				B74499CC27F41FD200205D25 /* View.swift in Sources */,
+				B74499D427F41FF300205D25 /* UserRouter.swift in Sources */,
+				B74499DB27F4832300205D25 /* UserDetailPresenter.swift in Sources */,
+				B74499D927F4831B00205D25 /* UserDetailInteractor.swift in Sources */,
+				B74499D727F4830B00205D25 /* UserDetailView.swift in Sources */,
+				B74499DF27F4833600205D25 /* UserDetailRouter.swift in Sources */,
+				B74499D227F41FE900205D25 /* UserEntity.swift in Sources */,
+				B74499DD27F4832C00205D25 /* UserDetailEntity.swift in Sources */,
+				B74499CC27F41FD200205D25 /* UserView.swift in Sources */,
 				B74499B427F41FBA00205D25 /* AppDelegate.swift in Sources */,
 				B74499B627F41FBA00205D25 /* SceneDelegate.swift in Sources */,
 			);
